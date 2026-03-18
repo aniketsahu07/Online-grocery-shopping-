@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FreshBasket | Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="auth-page">
+    <main class="auth-main">
+      <section class="auth-card">
+        <a href="index.html" class="logo">FreshBasket</a>
+        <h1>Welcome Back</h1>
+        <p class="auth-subtitle">Login karo ya naya account create karo</p>
+
+        <div class="auth-switch" role="tablist" aria-label="Auth form switch">
+          <button id="showLogin" class="switch-btn active" role="tab" aria-selected="true">Login</button>
+          <button id="showSignup" class="switch-btn" role="tab" aria-selected="false">Create Account</button>
+        </div>
+
+        <form id="loginForm" class="auth-form" novalidate>
+          <label for="loginEmail">Email</label>
+          <input id="loginEmail" type="email" placeholder="Enter your email" required />
+
+          <label for="loginPassword">Password</label>
+          <input id="loginPassword" type="password" placeholder="Enter your password" required minlength="6" />
+
+          <button type="submit" class="primary-btn full-btn">Login</button>
+        </form>
+
+        <form id="signupForm" class="auth-form hidden" novalidate>
+          <label for="signupName">Full Name</label>
+          <input id="signupName" type="text" placeholder="Enter full name" required />
+
+          <label for="signupEmail">Email</label>
+          <input id="signupEmail" type="email" placeholder="Enter your email" required />
+
+          <label for="signupPassword">Password</label>
+          <input id="signupPassword" type="password" placeholder="Create password (min 6)" required minlength="6" />
+
+          <label for="signupConfirm">Confirm Password</label>
+          <input id="signupConfirm" type="password" placeholder="Confirm password" required minlength="6" />
+
+          <button type="submit" class="primary-btn full-btn">Create Account</button>
+        </form>
+
+        <p id="authMessage" class="auth-message" aria-live="polite"></p>
+      </section>
+    </main>
+
+    <script src="login.js"></script>
+  </body>
+</html>

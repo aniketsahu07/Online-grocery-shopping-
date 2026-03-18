@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FreshBasket | Online Grocery Shopping</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container nav-wrapper">
+        <a href="#" class="logo">FreshBasket</a>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#offers">Offers</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+          </ul>
+        </nav>
+        <button id="cartToggle" class="cart-btn" aria-label="Open cart">
+          Cart <span id="cartCount">0</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="container hero-content">
+          <div>
+            <p class="tagline">Healthy. Fresh. Fast Delivery.</p>
+            <h1>Your Daily Grocery, Delivered in Minutes</h1>
+            <p>
+              Shop fruits, vegetables, dairy, snacks, and essentials at best
+              prices. Fresh quality and doorstep delivery guaranteed.
+            </p>
+            <a href="#products" class="primary-btn">Shop Now</a>
+          </div>
+          <div class="hero-card">
+            <img
+              class="hero-image"
+              src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1000&q=80"
+              alt="Fresh grocery basket"
+            />
+            <h3>Today’s Deal</h3>
+            <p>Get <strong>20% OFF</strong> on orders above ₹999</p>
+            <p class="small">Use Code: <strong>FRESH20</strong></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="controls container">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search groceries..."
+          aria-label="Search groceries"
+        />
+        <select id="categoryFilter" aria-label="Filter by category">
+          <option value="all">All Categories</option>
+          <option value="fruits">Fruits</option>
+          <option value="vegetables">Vegetables</option>
+          <option value="dairy">Dairy</option>
+          <option value="snacks">Snacks</option>
+        </select>
+      </section>
+
+      <section id="products" class="products container">
+        <div class="section-head">
+          <h2>Popular Groceries</h2>
+          <p>Choose fresh items for your home</p>
+        </div>
+        <div id="productGrid" class="product-grid"></div>
+      </section>
+
+      <section id="offers" class="offers">
+        <div class="container offer-box">
+          <h2>Weekend Combo Offer</h2>
+          <p>Buy any 3 products and get free delivery + 10% instant discount.</p>
+        </div>
+      </section>
+    </main>
+
+    <aside id="cartPanel" class="cart-panel" aria-hidden="true">
+      <div class="cart-header">
+        <h3>Your Cart</h3>
+        <button id="closeCart" class="close-btn" aria-label="Close cart">✕</button>
+      </div>
+      <div id="cartItems" class="cart-items">
+        <p class="empty">Your cart is empty.</p>
+      </div>
+      <div class="cart-footer">
+        <p>Total: <strong id="cartTotal">₹0</strong></p>
+        <button id="checkoutBtn" class="primary-btn">Proceed to Checkout</button>
+      </div>
+    </aside>
+
+    <footer id="contact" class="footer">
+      <div class="container footer-content">
+        <p>© 2026 FreshBasket. All rights reserved.</p>
+        <p>Email: support@freshbasket.com | Phone: +91 98765 43210</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
