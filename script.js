@@ -70,6 +70,78 @@ const products = [
     unit: "1 pack",
     image:
       "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: 9,
+    name: "Orange",
+    category: "fruits",
+    price: 95,
+    unit: "1 kg",
+    image:
+      "https://images.unsplash.com/photo-1580052614034-c55d20bfee3b?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: 10,
+    name: "Mango",
+    category: "fruits",
+    price: 140,
+    unit: "1 kg",
+    image:
+      "https://images.unsplash.com/photo-1553279768-865429fa0078?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: 11,
+    name: "Onion",
+    category: "vegetables",
+    price: 35,
+    unit: "1 kg",
+    image:
+      "https://images.unsplash.com/photo-1518977956812-cd3dbadaaf31?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: 12,
+    name: "Carrot",
+    category: "vegetables",
+    price: 55,
+    unit: "1 kg",
+    image:
+      "https://images.unsplash.com/photo-1447175008436-054170c2e979?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: 13,
+    name: "Curd",
+    category: "dairy",
+    price: 40,
+    unit: "400 g",
+    image:
+      "https://images.unsplash.com/photo-1571212515416-fef01fc43637?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: 14,
+    name: "Butter",
+    category: "dairy",
+    price: 58,
+    unit: "100 g",
+    image:
+      "https://images.unsplash.com/photo-1589985270826-4b7bb135bc9d?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: 15,
+    name: "Namak Para",
+    category: "snacks",
+    price: 45,
+    unit: "1 pack",
+    image:
+      "https://images.unsplash.com/photo-1599490659213-e2b9527bd087?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: 16,
+    name: "Roasted Peanuts",
+    category: "snacks",
+    price: 70,
+    unit: "250 g",
+    image:
+      "https://images.unsplash.com/photo-1612203985729-70726954388c?auto=format&fit=crop&w=800&q=80"
   }
 ];
 
