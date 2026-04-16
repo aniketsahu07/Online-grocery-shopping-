@@ -321,11 +321,11 @@ closeCart.addEventListener("click", () => {
 
 checkoutBtn.addEventListener("click", () => {
   if (!cart.size) {
-    alert("Cart empty hai. Pehle products add karo.");
+    alert("Your cart is empty. Please add products first.");
     return;
   }
 
-  alert("Order placed successfully! FreshBasket choose karne ke liye thanks.");
+  alert("Order placed successfully. Thank you for choosing FreshBasket.");
   cart.clear();
   renderCart();
   cartPanel.classList.remove("open");

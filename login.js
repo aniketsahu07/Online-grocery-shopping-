@@ -55,7 +55,7 @@ loginForm.addEventListener("submit", (event) => {
   const password = document.getElementById("loginPassword").value.trim();
 
   if (!email || !password) {
-    showMessage("Please email aur password dono fill karo.", false);
+    showMessage("Please enter both email and password.", false);
     return;
   }
 
@@ -65,11 +65,11 @@ loginForm.addEventListener("submit", (event) => {
   );
 
   if (!matchedAccount) {
-    showMessage("Invalid login details. Pehle account create karo ya sahi credentials dalo.", false);
+    showMessage("Invalid login details. Please create an account or use valid credentials.", false);
     return;
   }
 
-  showMessage("Login successful! Homepage pe redirect ho rahe ho...", true);
+  showMessage("Login successful. Redirecting to the homepage...", true);
   loginForm.reset();
 
   setTimeout(() => {
@@ -86,17 +86,17 @@ signupForm.addEventListener("submit", (event) => {
   const confirmPassword = document.getElementById("signupConfirm").value.trim();
 
   if (!name || !email || !password || !confirmPassword) {
-    showMessage("Account create karne ke liye sab fields required hain.", false);
+    showMessage("All fields are required to create an account.", false);
     return;
   }
 
   if (password.length < 6) {
-    showMessage("Password kam se kam 6 characters ka hona chahiye.", false);
+    showMessage("Password must be at least 6 characters long.", false);
     return;
   }
 
   if (password !== confirmPassword) {
-    showMessage("Password aur confirm password match nahi ho rahe.", false);
+    showMessage("Password and confirm password do not match.", false);
     return;
   }
 
@@ -106,14 +106,14 @@ signupForm.addEventListener("submit", (event) => {
   );
 
   if (alreadyExists) {
-    showMessage("Is email se account already bana hua hai. Login karo.", false);
+    showMessage("An account with this email already exists. Please log in.", false);
     return;
   }
 
   accounts.push({ name, email, password });
   saveAccounts(accounts);
 
-  showMessage("Account created successfully! Ab login karo.", true);
+  showMessage("Account created successfully. Please log in.", true);
   signupForm.reset();
   setMode("login");
 

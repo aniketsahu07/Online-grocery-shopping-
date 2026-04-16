@@ -54,6 +54,39 @@ It includes product browsing, filtering, cart management, and a simple login/cre
 - This is a front-end project; no backend/database is used.
 - Authentication is demo-level and stored in browser local storage.
 
+## Known Limitations
+
+- User accounts are stored in browser `localStorage`, so data is device/browser specific.
+- Passwords are not encrypted because this is a front-end demo without a backend.
+- Cart state does not persist after page refresh.
+- No payment gateway or order tracking integration is included.
+
+## Security Note
+
+- Do not use this project as-is for production authentication.
+- For production use, move auth logic to a secure backend, hash passwords, and use secure session/token handling.
+
+## Contributing
+
+1. Fork the repository.
+2. Create a feature branch: `git checkout -b feat/your-feature-name`.
+3. Commit with clear messages.
+4. Push the branch and open a Pull Request.
+
+## Commit Message Convention
+
+Use concise, action-oriented messages:
+
+- `feat: add product filtering by category`
+- `fix: correct cart total calculation`
+- `docs: improve setup instructions in README`
+- `refactor: simplify auth form mode switching`
+
+## License
+
+No license file is currently defined in this repository.
+Add a `LICENSE` file before public reuse or external contributions.
+
 ## 👨‍💻 Author
 
 Created by Aniket Sahu
